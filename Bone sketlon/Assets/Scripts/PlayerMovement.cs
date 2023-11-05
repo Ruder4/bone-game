@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
+    public GameObject player;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -71,16 +73,28 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
         Flip();
+
+        if (rb.velocity.x != 0f) {
+            GetComponent<Animator>().SetBool("moving", true);
+        }
+        else {
+            GetComponent<Animator>().SetBool("moving", false);
+        }
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (rb.velocity.y != 0){
+            rb.velocity = new Vector2(horizontal * speed * 0.75f, rb.velocity.y);
+        }
+        else {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
     }
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapBox(groundCheck.position, new Vector2(0.5f, 0.5f), 0f, groundLayer);
     }
 
     private void Flip()
@@ -88,9 +102,10 @@ public class PlayerMovement : MonoBehaviour
         if ((isFacingRight && horizontal < 0f) || (!isFacingRight && horizontal > 0f))
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+            GetComponent<LimbManager>().flipper();
         }
     }
 }

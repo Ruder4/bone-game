@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptable object/Item")]
+[CreateAssetMenu(menuName = "Scriptable object/Bone")]
 public class Bone : ScriptableObject
 {
     [Header("Gameplay")]
@@ -15,13 +15,13 @@ public class Bone : ScriptableObject
         Arm,
         Leg
     }
-
+ 
     public enum BoneAction {
         Grapple,
-        Gravity,
-        Ghost,
+        Levitation,
         Stool,
-        Size,
+        Big,
+        Small,
         Teleport,
         Double,
         Dash
