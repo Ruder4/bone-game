@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 2250629535756913387}
   - component: {fileID: 4162679670497036083}
   - component: {fileID: 4110657243995480094}
+  - component: {fileID: 2657397710850859864}
   m_Layer: 0
   m_Name: bonebro (rigged)
   m_TagString: Untagged
@@ -527,6 +528,7 @@ MonoBehaviour:
   rightLegU: {fileID: 6523061713655149090}
   rightLegL: {fileID: 2895005138149164921}
   rightLegH: {fileID: 1194101509425759363}
+  flipped: 0
   currentBoneSelection: 1
   currentBoneType: Arm
   limbs: 00000000000000000000000000000000
@@ -536,6 +538,30 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   collisions: []
+  HleftArmU: {fileID: 0}
+  HleftArmL: {fileID: 0}
+  HleftArmH: {fileID: 0}
+  HrightArmU: {fileID: 0}
+  HrightArmL: {fileID: 0}
+  HrightArmH: {fileID: 0}
+  HleftLegU: {fileID: 0}
+  HleftLegL: {fileID: 0}
+  HleftLegH: {fileID: 0}
+  HrightLegU: {fileID: 0}
+  HrightLegL: {fileID: 0}
+  HrightLegH: {fileID: 0}
+--- !u!114 &2657397710850859864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018348026334088996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30a28edd7bfcc342b6c82d34fb287eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2160511162133590619
 GameObject:
   m_ObjectHideFlags: 0
