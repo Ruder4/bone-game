@@ -211,6 +211,18 @@ public class LimbManager : MonoBehaviour
             else if (allLimbs[currentBoneSelection - 1].GetComponent<BoneInitiator>().BoneAction == "Small"){
                 GetComponent<Abilities>().small = true;
             }
+            else if (allLimbs[currentBoneSelection - 1].GetComponent<BoneInitiator>().BoneAction == "DJ"){
+                GetComponent<Abilities>().dj = true;
+            }
+            else if (allLimbs[currentBoneSelection - 1].GetComponent<BoneInitiator>().BoneAction == "Dash"){
+                GetComponent<Abilities>().dash = true;
+            }
+            else if (allLimbs[currentBoneSelection - 1].GetComponent<BoneInitiator>().BoneAction == "Levitation"){
+                GetComponent<Abilities>().levitation = true;
+            }
+            else if (allLimbs[currentBoneSelection - 1].GetComponent<BoneInitiator>().BoneAction == "Teleport"){
+                GetComponent<Abilities>().teleport = true;
+            }
 
             /**
                 "Big"

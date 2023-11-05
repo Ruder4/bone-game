@@ -427,6 +427,7 @@ MonoBehaviour:
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
   player: {fileID: 2018348026334088996}
+  jumpSound: {fileID: 0}
   rb: {fileID: 4162679670497036083}
   groundCheck: {fileID: 280665431790465369}
   groundLayer:
@@ -562,6 +563,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30a28edd7bfcc342b6c82d34fb287eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  big: 0
+  small: 0
+  levitation: 0
+  dj: 0
+  dash: 0
+  teleport: 0
+  jumpPower: 10
+  floatTime: 3
+  dashPower: 1e+20
+  dashTime: 0.4
 --- !u!1 &2160511162133590619
 GameObject:
   m_ObjectHideFlags: 0

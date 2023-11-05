@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject player;
 
+    public AudioSource jumpSound;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -62,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-
             jumpBufferCounter = 0f;
         }
 

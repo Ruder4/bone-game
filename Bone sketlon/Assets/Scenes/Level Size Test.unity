@@ -1117,6 +1117,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 579992219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &120474526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4379059568363289665, guid: aca4f808464d6e840ba33b77026e4ad1, type: 3}
+  m_PrefabInstance: {fileID: 6016803292315088394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &143680465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5816260331009881890, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: BoneAction
-      value: Teleport
+      value: DJ
       objectReference: {fileID: 0}
     - target: {fileID: -2734986796675065878, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -3928,7 +3933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5536346258009243610, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: m_Name
-      value: Teleport Leg 1
+      value: DJ Leg 1
       objectReference: {fileID: 0}
     - target: {fileID: 5536346258009243610, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: m_Layer
@@ -5960,11 +5965,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5816260331009881890, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: BoneAction
-      value: Big
+      value: Levitation
       objectReference: {fileID: 0}
     - target: {fileID: 5536346258009243610, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: m_Name
-      value: Big Arm 1
+      value: Levitation Arm 1
       objectReference: {fileID: 0}
     - target: {fileID: 5536346258009243610, guid: 63364bcc3259167459f932f169e986c5, type: 3}
       propertyPath: m_Layer
@@ -12888,6 +12893,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.014734193
       objectReference: {fileID: 0}
+    - target: {fileID: 2657397710850859864, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
+      propertyPath: dashTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657397710850859864, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
+      propertyPath: dashPower
+      value: 1e+20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657397710850859864, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
+      propertyPath: floatTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657397710850859864, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
+      propertyPath: jumpPower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2895005138149164921, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -12983,7 +13004,7 @@ PrefabInstance:
     - target: {fileID: 4110657243995480094, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
       propertyPath: HleftLegH
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 120474526}
     - target: {fileID: 4110657243995480094, guid: 6afb9047ed3b34c589de762b84064d1c, type: 3}
       propertyPath: HleftLegL
       value: 
